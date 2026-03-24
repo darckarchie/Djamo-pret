@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-sans text-text-primary;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1 {
+    @apply text-6xl font-bold leading-tight;
+  }
+
+  h2 {
+    @apply text-5xl font-bold leading-tight;
+  }
+
+  h3 {
+    @apply text-3xl font-semibold leading-snug;
+  }
+
+  h4 {
+    @apply text-2xl font-semibold leading-relaxed;
+  }
+
+  p {
+    @apply text-base font-normal leading-relaxed text-text-secondary;
+  }
+
+  a {
+    @apply transition-colors duration-200;
+  }
+}
+
+@layer components {
+  .container-djamo {
+    @apply container mx-auto px-4 md:px-6 lg:px-8;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center px-8 py-4 rounded-full bg-djamo-blue text-white font-semibold text-base transition-all duration-200 hover:bg-djamo-blue-dark focus:ring-4 focus:ring-blue-300 focus:outline-none disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center px-8 py-4 rounded-full bg-transparent text-djamo-blue border-2 border-djamo-blue font-semibold text-base transition-all duration-200 hover:bg-djamo-blue-light active:bg-djamo-blue disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  .btn-ghost {
+    @apply inline-flex items-center justify-center px-4 py-2 rounded-md text-text-secondary font-medium transition-colors duration-200 hover:bg-surface-secondary hover:text-text-primary;
+  }
+
+  .input-field {
+    @apply w-full px-4 py-3 rounded-md bg-surface-primary border border-border-default text-text-primary placeholder-text-muted transition-all duration-200 focus:border-djamo-blue focus:outline-none focus:ring-4 focus:ring-blue-300;
+  }
+
+  .card {
+    @apply rounded-lg bg-surface-primary shadow-md transition-all duration-300 hover:shadow-lg hover:-translate-y-1;
+  }
+
+  .badge {
+    @apply inline-flex items-center px-3 py-1 rounded-full text-sm font-medium;
+  }
+
+  .badge-blue {
+    @apply badge bg-djamo-blue-light text-djamo-blue;
+  }
+
+  .badge-success {
+    @apply badge bg-green-100 text-semantic-success;
+  }
+
+  .badge-error {
+    @apply badge bg-red-100 text-semantic-error;
+  }
+
+  .badge-warning {
+    @apply badge bg-yellow-100 text-semantic-warning;
+  }
+
+  .section {
+    @apply py-20 md:py-24 lg:py-32;
+  }
+
+  .section-alternate {
+    @apply section bg-surface-secondary;
+  }
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-djamo-blue to-djamo-blue-dark bg-clip-text text-transparent;
+  }
+
+  .gradient-text-orange {
+    @apply bg-gradient-to-r from-djamo-orange to-red-600 bg-clip-text text-transparent;
+  }
+}
+
+@layer utilities {
+  .flex-center {
+    @apply flex items-center justify-center;
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .transition-smooth {
+    @apply transition-all duration-300 ease-out;
+  }
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}

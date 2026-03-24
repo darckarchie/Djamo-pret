@@ -1,0 +1,6 @@
+
+VITE_SUPABASE_URL=https://lqkulxxyufrrulwwrxke.supabase.co
+VITE_SUPABASE_ANON_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imxxa3VseHh5dWZycnVsd3dyeGtlIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzM5NDU3NDEsImV4cCI6MjA4OTUyMTc0MX0.L0FoOPxVPegryXEpuEIw3YFAXkdZ2UZo8csTfmipulM
+
+
+postgresql://postgres.lqkulxxyufrrulwwrxke@aws-1-eu-west-1.pooler.supabase.com:5432/postgres
